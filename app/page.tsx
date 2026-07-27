@@ -121,15 +121,17 @@ function KpiCard({ title, value }) {
   );
 }
 
-function InputGroup({ label, type, defaultValue }) {
+interface InputGroupProps {
+  label: string;
+  type: string;
+  defaultValue?: string | number; // <-- Added '?' to make it optional
+}
+
+export function InputGroup({ label, type, defaultValue = "" }: InputGroupProps) {
   return (
-    <div className="flex flex-col">
-      <label className="text-sm mb-2">{label}</label>
-      <input 
-        type={type} 
-        defaultValue={defaultValue}
-        className="bg-[#1e1e2f] border border-gray-600 rounded p-2 text-white focus:outline-none focus:border-[#b48eed]" 
-      />
+    <div>
+      <label>{label}</label>
+      <input type={type} defaultValue={defaultValue} />
     </div>
   );
 }
