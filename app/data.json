@@ -1,0 +1,20 @@
+{
+  "kpis": {
+    "valorTotal": 612018.00,
+    "totalProdutos": 10,
+    "totalMovimentacoes": 20,
+    "totalClientes": 5
+  },
+  "produtos": [
+    { "codigo": "P001", "nome": "Pneu 295/80R22.5", "categoria": "Suspensão e Freios", "quantidade": 61, "minima": 9, "custo": 1883.25, "fornecedor": "Mecânica Caminhões Ltda.", "total": 114878.25 },
+    { "codigo": "P002", "nome": "Filtro de Óleo Motor", "categoria": "Motor", "quantidade": 24, "minima": 8, "custo": 101.48, "fornecedor": "Distribuidora DieselTec", "total": 2435.52 }
+  ],
+  "movimentacoes": [
+    { "data": "2026-07-08", "tipo": "Entrada", "quantidade": 18, "produto": "Eixo Cardan", "motivo": "Venda", "valor": 763.18 },
+    { "data": "2026-07-20", "tipo": "Saída", "quantidade": 26, "produto": "Filtro de Combustível", "motivo": "Compra", "valor": 565.66 }
+  ],
+  "grafico": [
+    { "name": "Entrada", "valor": 165 },
+    { "name": "Saída", "valor": 372 }
+  ]
+}
