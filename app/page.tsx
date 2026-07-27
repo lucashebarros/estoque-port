@@ -111,12 +111,16 @@ export default function Dashboard() {
   );
 }
 
-// Sub-componentes auxiliares para manter o código limpo
-function KpiCard({ title, value }) {
+interface KpiCardProps {
+  title: string;
+  value: string | number;
+}
+
+function KpiCard({ title, value }: KpiCardProps) {
   return (
     <div className="flex flex-col">
       <span className="text-sm text-gray-400 mb-1">{title}</span>
-      <span className="text-3xl font-normal text-white">{value}</span>
+      <span className="text-2xl font-bold text-white">{value}</span>
     </div>
   );
 }
